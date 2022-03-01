@@ -12,29 +12,7 @@ class Procedure:
         self.__charge = charge
         self. __patient_id = patient_id
 
-#### set_methods ####
 
-# set_pro_name
-    def set_pro_name(self, pro_name):
-        self.__pro_name = pro_name
-
-#set_date
-    def set_date(self, date):
-        self.__date = date
-
-#set_practitioner
-    def set_practitioner(self, practitioner):
-        self.__practitioner = practitioner
-
-#set_charge
-    def set_charge(self, charge):
-        self.__charge = charge
-
-#set_id 
-    def set_id(self, patient_id):
-        self.__patient_id = patient_id
-
-#### get_methods ####
 #get_pro_name
     def get_pro_name(self):
         return self.__pro_name
@@ -54,3 +32,6 @@ class Procedure:
 #get_id
     def get_id(self):
         return self.__patient_id
+
+def __str__(self):
+    return "Procedure: " + self.__pro_name + '\n' + "Date: " + self.__date +'\n' + "Practitioner: " + self.__practitioner + '\n' + "Charge:  $" + format(self.__charge, ',.2f')

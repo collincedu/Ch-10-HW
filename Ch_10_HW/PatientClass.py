@@ -11,33 +11,6 @@ class Patient:
         self.__phone = phone
         self.__veteran_status = veteran_status
 
-#### set_methods ####
-# set_id mehtod will accept the argument for the patients id
-
-    def set_id(self, patient_id):
-        self.__patient_id = patient_id
-
-# set_name method
-    
-    def set_name(self, name):
-        self.__name = name
-
-# set_address method
-
-    def set_address(self, address):
-        self.__address = address
-
-# set_phone method
-
-    def set_phone(self, phone):
-        self.__phone = phone 
-
-#set_veteran_status method
-
-    def set_veteran_status(self, veteran_status):
-        self.__veteran_status = veteran_status
-
-#### get_methods ####
 # get_id method to return the patient id
 
     def get_id(self):
@@ -62,3 +35,9 @@ class Patient:
 
     def get_veteran_status(self):
         return self.__veteran_status
+
+def __str__(self):
+    return "Name: " + self.__name + "\n" + "Address: " + self.__address
+    + "\n" + "Phone:" + self.__phone
+    
+    
